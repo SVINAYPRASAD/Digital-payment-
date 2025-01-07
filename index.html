@@ -1,109 +1,71 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Payment Wallet</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Payment Wallet</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Digital Payment Wallet</h1>
-    </header>
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Login/Signup</a></li>
+        <li><a href="#">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section class="wallet-section">
-            <h2>Add Payment Method</h2>
-            <form id="payment-form">
-                <label for="card-name">Cardholder Name:</label>
-                <input type="text" id="card-name" placeholder="Cardholder Name" required>
-                <label for="card-number">Card Number:</label>
-                <input type="text" id="card-number" placeholder="Card Number" required>
-                <label for="expiry-date">Expiry Date:</label>
-                <input type="text" id="expiry-date" placeholder="MM/YY" required>
-                <label for="cvv">CVV:</label>
-                <input type="text" id="cvv" placeholder="CVV" required>
-                <button type="submit">Add Payment Method</button>
-            </form>
-            <div id="loading-indicator" style="display:none;">
-                <div class="spinner"></div>
-                Loading...
-            </div>
-            <div id="message-container" style="display:none;"></div>
-        </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Digital Payment Wallet</h1>
+    <p>Make payments, recharge, and pay bills with ease</p>
+    <button>Get Started</button>
+  </section>
 
-        <section class="transactions-section">
-            <h2>Transactions</h2>
-            <ul id="transaction-list"></ul>
-        </section>
-    </main>
+  <!-- Featured Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Mobile Recharge</li>
+      <li>DTH Recharge</li>
+      <li>Bill Payments</li>
+    </ul>
+  </section>
 
-    <footer>
-        <p>Developed by VINAY | © 2024</p>
-    </footer>
+  <!-- How it Works Section -->
+  <section class="how-it-works">
+    <h2>How it Works</h2>
+    <p>Simply login, add money, and start making payments</p>
+  </section>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What our users say</h2>
+    <ul>
+      <li>Digital Payment Wallet is easy to use and convenient</li>
+      <li>I love the variety of services offered</li>
+    </ul>
+  </section>
 
-        .wallet-section, .transactions-section {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
+  <!-- Call-to-Action Section -->
+  <section class="cta">
+    <h2>Get Started Today</h2>
+    <button>Sign up now</button>
+  </section>
 
-        label {
-            margin: 10px 0 5px;
-        }
-
-        input {
-            margin: 10px 0;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            width: 100%;
-        }
-
-        button {
-            padding: 10px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            width: 100%;
-        }
-
-        button:hover {
-            background-color: #218838;
-        }
-
-        #loading-indicator {
-            display: none;
-            margin: 10px 0;
-            text-align: center;
-        }
-
-        .spinner {
-            border: 4px solid rgba(0, 0, 0, 0.1);
-            border-left-color: #28a745;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-    </style>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Digital Payment Wallet</p>
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </footer>
 </body>
 </html>
